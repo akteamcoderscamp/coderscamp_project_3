@@ -8,7 +8,9 @@ const app = express();
 const auth = require('./routes/auth');
 const vehicles = require('./routes/vehicles');
 const users = require('./routes/users');
-// const vehicleRoutes = require('./routes/vehicleRoutes');
+const vehicleRoutes = require('./routes/vehicleRoutes');
+const routeLogs = require('./routes/routeLogs');
+
 
 if (!config.get('jwtPrivateKey')) {
     console.error('FATAL ERROR: jwtPrivateKey is not defined.');
@@ -21,7 +23,8 @@ mongoose.connect('mongodb+srv://dbUser:dbUserPassword@cluster0-b6aon.mongodb.net
 
 app.use(express.json());
 app.use('/api/vehicles', vehicles);
-// app.use('/api/vehicleRoutes', vehicleRoutes);
+app.use('/api/vehicleRoutes', vehicleRoutes);
+app.use('/api/routeLogs', routeLogs);
 app.use('/api/users', users);
 app.use('/api/auth', auth);
 
