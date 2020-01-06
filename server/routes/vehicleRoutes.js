@@ -24,11 +24,10 @@ router.get('/:id', async (req, res) => {
 
 router.post('/', async (req, res) => {
     const vehicleRoute = new VehicleRoute({
-        vehicle: req.body.vehicle,
-        driver: req.body.driver,
+        route_name: req.body.route_name,
+        vehicle_plate: req.body.vehicle,
+        driver_email: req.body.driver,
         date: req.body.date,
-        starting: req.body.starting,
-        destination: req.body.destination,
         km: req.body.km,
         fuel: req.body.fuel,
         isFinished: req.body.isFinished,
@@ -56,11 +55,10 @@ router.put('/:id', bodyParser.json(), async (req, res) => {
     try {
         const vehicleRoute = await VehicleRoute.findByIdAndUpdate(req.params.id,
             {
-                vehicle: req.body.vehicle,
-                driver: req.body.driver,
+                route_name: req.body.route_name,
+                vehicle_plate: req.body.vehicle,
+                driver_email: req.body.driver,
                 date: req.body.date,
-                starting: req.body.starting,
-                destination: req.body.destination,
                 km: req.body.km,
                 fuel: req.body.fuel,
                 isFinished: req.body.isFinished,

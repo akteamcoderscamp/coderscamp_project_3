@@ -103,31 +103,6 @@ class VehicleRouteUpdate extends Component {
                             </Form.Group>
 
                             <Form.Group >
-                                <Form.Label>From</Form.Label>
-                                <Form.Control
-                                    name='starting'
-                                    onChange={handleChange}
-                                    value={values.brand}
-                                    isInvalid={!!errors.brand}
-                                />
-                                <Form.Control.Feedback type="invalid">
-                                    {errors.brand}
-                                </Form.Control.Feedback>
-                            </Form.Group>
-                            <Form.Group >
-                                <Form.Label>To</Form.Label>
-                                <Form.Control
-                                    name='destination'
-                                    onChange={handleChange}
-                                    value={values.brand}
-                                    isInvalid={!!errors.brand}
-                                />
-                                <Form.Control.Feedback type="invalid">
-                                    {errors.brand}
-                                </Form.Control.Feedback>
-                            </Form.Group>
-
-                            <Form.Group >
                                 <Form.Label>Distance in km</Form.Label>
                                 <Form.Control
                                     name='km'

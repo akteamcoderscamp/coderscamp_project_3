@@ -11,11 +11,10 @@ class VehicleRouteInsert extends Component {
                 <h1 style={{ paddingTop: "30px" }}>Create new vehicle Route</h1> <br />
                 <Formik
                     initialValues={{
-                        vehicle: '',
-                        driver: '',
+                        route_name: '',
+                        vehicle_plate: '',
+                        driver_email: '',
                         date: '',
-                        starting: '',
-                        destination: '',
                         km: '',
                         fuel: '',
                         isFinished: false,
@@ -91,30 +90,7 @@ class VehicleRouteInsert extends Component {
                                     </Form.Control.Feedback>
                                 </Form.Group>
 
-                                <Form.Group >
-                                    <Form.Label>From</Form.Label>
-                                    <Form.Control
-                                        name='starting'
-                                        onChange={handleChange}
-                                        value={values.brand}
-                                        isInvalid={!!errors.brand}
-                                    />
-                                    <Form.Control.Feedback type="invalid">
-                                        {errors.brand}
-                                    </Form.Control.Feedback>
-                                </Form.Group>
-                                <Form.Group >
-                                    <Form.Label>To</Form.Label>
-                                    <Form.Control
-                                        name='destination'
-                                        onChange={handleChange}
-                                        value={values.brand}
-                                        isInvalid={!!errors.brand}
-                                    />
-                                    <Form.Control.Feedback type="invalid">
-                                        {errors.brand}
-                                    </Form.Control.Feedback>
-                                </Form.Group>
+                            
 
                                 <Form.Group >
                                     <Form.Label>Distance in km</Form.Label>
