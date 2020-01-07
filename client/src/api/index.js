@@ -1,6 +1,6 @@
 import axios from 'axios'
 import {getAllVehicles, deleteVehicleById, insertVehicle, updateVehicleById, getVehicleById} from './vehicle'
-import {getAllVehicleRoutes, deleteVehicleRouteById, insertVehicleRoute, updateVehicleRouteById, getVehicleRouteById} from './vehicleRoute'
+import {getAllRoutes, deleteRouteById, insertRoute, updateRouteById, getRouteById} from './route'
 import {getAllUsers, deleteUserById, insertUser, updateUserById, getUserById, getUserEmails} from './user'
 
 export const api = axios.create({
@@ -22,11 +22,11 @@ const apis = {
     updateUserById,
     getUserById,
     getUserEmails,
-    getAllVehicleRoutes,
-    deleteVehicleRouteById,
-    insertVehicleRoute,
-    updateVehicleRouteById,
-    getVehicleRouteById,
+    getAllRoutes,
+    deleteRouteById,
+    insertRoute,
+    updateRouteById,
+    getRouteById,
 }
 
 export default apis

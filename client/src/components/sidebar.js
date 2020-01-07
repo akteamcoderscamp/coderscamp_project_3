@@ -4,8 +4,8 @@ import { slide as Menu } from 'react-burger-menu';
 export default props => {
   return (
     <Menu>
-      <a className="menu-item" href="/vehicleRoutes/list">
-        Routes history
+      <a className="menu-item" href="/routes/list">
+        Routes Management
       </a>
 
       <a className="menu-item" href="/users/list">
