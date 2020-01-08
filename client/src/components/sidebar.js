@@ -20,7 +20,7 @@ export default props => {
         Invoices
       </a>
 
-      <a className="menu-item" href="/">
+      <a className="menu-item" href="/vehicleRoutes/list">
         User Panel
       </a>
 
