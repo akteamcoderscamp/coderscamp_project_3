@@ -16,7 +16,7 @@ export default props => {
         Vehicle Management
       </a>
 
-      <a className="menu-item" href="/">
+      <a className="menu-item" href="/invoices/list">
         Invoices
       </a>
 
