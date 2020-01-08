@@ -112,3 +112,130 @@ height: 55vh;
 #green{
     color: rgb(13, 180, 13)
 }
+
+/* form */
+#overlap{
+    width: 80%;
+    height: 90%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 60%;
+    height: 80%;
+    background-color: white;
+    border: #2C3B89 solid;
+}
+
+form{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#blue{
+    color: #2C3B89;
+}
+
+.formTitle{
+    padding: 5% 10%;
+}
+
+.formContent{
+    width: 70%;
+    height: 100%;
+}
+
+.titleSmall{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: #404040;
+}
+
+.formP1{
+    display: flex;
+    height: 30%;
+    width: 100%;
+    padding: 3% 10%;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left{
+    width: 20%;
+    margin-top: 1%;
+}
+
+.right{
+    margin-left: 10%;;
+    width: 60%;
+}
+
+input{
+    border: #2C3B89 solid 1px;
+    padding: 1.5%;
+    height: 15%;
+    margin: 1% 0;
+}
+
+select{
+    border: #2C3B89 solid 1px;
+    padding: 1.5%;
+    height: 22%;
+    margin: 1% 0;
+}
+
+.formP2{
+    display: flex;
+    height: 15%;
+    width: 100%;
+    padding: 3% 10%;
+    margin-top: 5%;
+}
+
+#km, #invoice{
+    padding: 1.5%;
+    height: 30%;
+    margin-bottom: 1%;
+    background-color: lightgray;
+    width: 30%;
+}
+
+.formP3{
+    height: 20%;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+}
+#checkbox{
+    width: 20%;
+    height: 40%;
+    margin-right: 7%;
+}
+
+.formP4{
+    height: 80%;
+    width: 30%;
+    display: flex;
+    align-items: flex-end;
+}
+
+button{
+    height: 15%;
+    width: 150%;
+    background-color: #2C3B89;
+    margin-bottom: 20%;
+    margin-right: 5%;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}

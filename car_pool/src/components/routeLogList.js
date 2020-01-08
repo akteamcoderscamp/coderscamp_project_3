@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import routeApi from '../apis';
+import routeApi from '../apis/routeLogAPI';
 
 class RouteLogList extends Component {
     constructor(props) {

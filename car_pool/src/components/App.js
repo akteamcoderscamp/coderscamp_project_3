@@ -2,10 +2,12 @@ import React from 'react';
 import './App.css';
 import LogsTableHeader from './LogsTableHeader';
 import RouteLogList from './routeLogList';
+import AddNewLog from './AddNewLog';
 
 const App = () => {
   return (
     <div className="container">
+
       <div className="userPanel">
 
       <div className="header icons">
@@ -29,8 +31,15 @@ const App = () => {
       </div>
 
       </div>
+
+      <div id="overlap" style={{display:"none"}}>
+        <AddNewLog />
+      </div>
+
     </div>
   );
+
 }
+
 
 export default App;
