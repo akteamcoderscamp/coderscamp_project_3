@@ -10,7 +10,7 @@ const vehicleRouteSchema = new mongoose.Schema({
     destination: {type: String, required: true },
     km: {type: Number, required: true },
     fuel: {type: Number, required: true },
-    comments: String
+    comments: String, 
 });
 
 

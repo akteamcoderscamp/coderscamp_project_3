@@ -3,14 +3,14 @@ import './App.css';
 
 const LogsTableHeader = () => {
     return (
-        <div id="captions" className="log">
-            <div className="lp">Lp</div>
-            <div className="date">Date</div>
-            <div className="route">Route</div>
-            <div className="km">Km</div>
-            <div className="vehicle">Vehicle</div>
-            <div className="invoice">Invoice</div>
-            <div className="status">Status</div>
+        <div id="captions" className="item">
+            <div id="lp" className="field">Lp</div>
+            <div className="field">Date</div>
+            <div className="field">Route</div>
+            <div className="field">Km</div>
+            <div className="field">Vehicle</div>
+            <div className="field">Invoice</div>
+            <div className="field">Status</div>
           </div>
     )
 };

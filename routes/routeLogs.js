@@ -47,24 +47,4 @@ router.delete('/:id', [auth, admin], async (req, res) => {
     }
 });
 
-async function createTestLog(){
-    const routeLog = new RouteLog({
-        date: '12.12.2001',
-        route: 'WAW-WRO',
-        km: 250,
-        vehicle: 'DW123',
-        invoice: '200',
-        status: 'In Progress'
-    });
-    try{
-        const result = await routeLog.save();
-        console.log(result);
-    }
-    catch (ex){
-        console.log(ex.message);
-    }
-}
-
-createTestLog();
-
 module.exports = router;

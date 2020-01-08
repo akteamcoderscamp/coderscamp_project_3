@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
-const jwt = require('jsonwebtoken');
 const config = require('config');
 const express = require('express');
 const app = express();
+const cors = require('cors')
+const bodyParser = require('body-parser')
 
 
 const auth = require('./routes/auth');
@@ -22,6 +23,13 @@ mongoose.connect('mongodb+srv://dbUser:dbUserPassword@cluster0-b6aon.mongodb.net
     .catch(err => console.error('Could not connect to MongoDB',err));
 
 app.use(express.json());
+
+app.use(bodyParser.urlencoded({
+    extended: false
+  }));
+app.use(bodyParser.json());
+app.use(cors())
+
 app.use('/api/vehicles', vehicles);
 app.use('/api/vehicleRoutes', vehicleRoutes);
 app.use('/api/routeLogs', routeLogs);
