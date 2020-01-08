@@ -3,7 +3,6 @@ import ReactTable from 'react-table'
 import api from '../api'
 import styled from 'styled-components'
 import 'react-table/react-table.css'
-import { Button } from 'react-bootstrap'
 
 
 const Wrapper = styled.div`
