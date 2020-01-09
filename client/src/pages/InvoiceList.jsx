@@ -20,6 +20,7 @@ class InvoiceList extends Component {
             isLoading: false,
         }
     }
+    
 
     componentDidMount = () => {
         this.setState({ isLoading: true })
@@ -45,7 +46,7 @@ class InvoiceList extends Component {
                 accessor: 'route_name',
             },
             {
-                Header: 'Invoice',
+                Header: 'Invoice in EUR',
                 accessor: 'invoice',
             },
         ]

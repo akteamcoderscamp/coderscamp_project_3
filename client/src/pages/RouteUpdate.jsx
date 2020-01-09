@@ -50,7 +50,7 @@ class RouteUpdate extends Component {
                         }}
                         onSubmit={(values) => {
                             api.updateRouteById(this.state.id, values)
-                            window.alert('Route updated successfully')
+                            window.location.assign("/routes/list")
                         }}
                         render={({
                             values,
