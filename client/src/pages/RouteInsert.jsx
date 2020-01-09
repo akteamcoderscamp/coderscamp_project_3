@@ -35,7 +35,7 @@ class RouteInsert extends Component {
                     }}
                     onSubmit={(values) => {
                         api.insertRoute(values)
-                        window.alert('Route created successfully')
+                        window.location.assign("/routes/list")
                     }}
                     render={({
                         values,
