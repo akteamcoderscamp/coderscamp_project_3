@@ -8,6 +8,7 @@ import RouteUpdate from './RouteUpdate'
 import UserList from './UserList'
 import UserInsert from './UserInsert'
 import UserUpdate from './UserUpdate'
+import InvoiceList from './InvoiceList'
 
 export {
     Login,
@@ -20,4 +21,5 @@ export {
     UserInsert,
     UserList,
     UserUpdate,
+    InvoiceList,
 }

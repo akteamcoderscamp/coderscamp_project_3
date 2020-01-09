@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { Login, VehicleList, VehicleInsert, VehicleUpdate, UserInsert, UserList, UserUpdate, RouteList, RouteInsert, RouteUpdate } from '../pages'
+import { Login, VehicleList, VehicleInsert, VehicleUpdate, UserInsert, UserList, UserUpdate, RouteList, RouteInsert, RouteUpdate, InvoiceList } from '../pages'
 import { Sidebar } from '../components'
 import '../components/sidebar.css'
 import PrivateRoute from './PrivateRoute'
@@ -20,6 +20,7 @@ function App() {
         <PrivateRoute path="/users/list" exact component={UserList} />
         <PrivateRoute path="/users/create" exact component={UserInsert} />
         <PrivateRoute path="/users/update/:id" exact component={UserUpdate} />
+        <PrivateRoute path="/invoices/list" exact component={InvoiceList} />
       </Switch>
     </Router>
   );
