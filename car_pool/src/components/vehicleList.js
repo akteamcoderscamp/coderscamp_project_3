@@ -26,7 +26,7 @@ class VehicleList extends Component {
 
             return (
                 <option key={vehicle._id}>
-                    {vehicle.brand} {vehicle.type}
+                    {vehicle.plate}
                 </option>
             );
         });

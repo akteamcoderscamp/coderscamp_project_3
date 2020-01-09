@@ -13,7 +13,7 @@ export const insertRouteLog = payload => api.post('/routeLogs', payload)
 export const updateRouteLogById = (id, payload) => api.put(`/routeLogs/${id}`, payload)
 export const getRouteLogById = id => api.get(`/routeLogs/${id}`)
 
-const routeApi = {
+const routeLogApi = {
     getAllRouteLogs,
     deleteRouteLogById,
     insertRouteLog,
@@ -21,4 +21,4 @@ const routeApi = {
     getRouteLogById,
 }
 
-export default routeApi
+export default routeLogApi

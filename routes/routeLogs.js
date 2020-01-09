@@ -22,10 +22,10 @@ router.get('/:id', async (req, res) => {
 router.post('/', auth, async (req, res) => {
 
     const routeLog = new RouteLog({
+        route_name: req.body.route_name,
+        vehicle_plate: req.body.vehicle_plate,
+        driver_email: req.body.driver_email,
         date: req.body.date,
-        route: req.body.route,
-        km: req.body.km,
-        vehicle: req.body.vehicle,
         invoice: req.body.invoice,
         status: req.body.status
     });

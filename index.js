@@ -9,7 +9,7 @@ const bodyParser = require('body-parser')
 const auth = require('./routes/auth');
 const vehicles = require('./routes/vehicles');
 const users = require('./routes/users');
-const vehicleRoutes = require('./routes/vehicleRoutes');
+const routes = require('./routes/routes');
 const routeLogs = require('./routes/routeLogs');
 
 
@@ -31,7 +31,7 @@ app.use(bodyParser.json());
 app.use(cors())
 
 app.use('/api/vehicles', vehicles);
-app.use('/api/vehicleRoutes', vehicleRoutes);
+app.use('/api/routes', routes);
 app.use('/api/routeLogs', routeLogs);
 app.use('/api/users', users);
 app.use('/api/auth', auth);

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import routeApi from '../apis/routeLogAPI';
+import routeLogApi from '../apis/routeLogAPI';
 
 class RouteLogList extends Component {
     constructor(props) {
@@ -12,7 +12,7 @@ class RouteLogList extends Component {
 
     componentDidMount = () => {
         this.setState({ isLoading: true })
-        routeApi.getAllRouteLogs().then(routeLogs => {
+        routeLogApi.getAllRouteLogs().then(routeLogs => {
             this.setState({
                 routeLogs: routeLogs.data,
                 isLoading: false
@@ -48,9 +48,9 @@ class RouteLogList extends Component {
                 <div className="item" key={log._id}>
                     <div id="lp" className="field">{log.lp}</div>
                     <div className="field">{log.date}</div>
-                    <div className="field">{log.route}</div>
-                    <div className="field">{log.km}</div>
-                    <div className="field">{log.vehicle}</div>
+                    <div className="field">{log.route_name}</div>
+                    <div className="field">km</div>
+                    <div className="field">{log.vehicle_plate}</div>
                     <div className="field">{log.invoice}</div>
                     <div id={colorChange} className="field">{log.status}</div>
                 </div>

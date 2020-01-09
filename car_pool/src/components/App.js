@@ -32,11 +32,12 @@ const App = () => {
 
       </div>
 
-      <div id="overlap" style={{display:"none"}}>
+      <div id="overlap" style={{display:"in-line block"}}>
         <AddNewLog />
       </div>
 
     </div>
+
   );
 
 }
