@@ -15,8 +15,11 @@ class AddNewLog extends Component {
             invoice: 0,
             state: false,
             routes: [],
-            isLoading: false
+            isLoading: false,
+            theRoute: {}
         }
+
+        this.findTheRoute = this.findTheRoute.bind(this);
     }
 
     componentDidMount = () => {
@@ -28,6 +31,13 @@ class AddNewLog extends Component {
             })
         })
     };
+
+    findTheRoute = () => {
+        this.setState({
+            theRoute: this.state.routes.find({ starting:this.starting })
+        }) 
+        console.log(this.state.theRoute)
+    }
       
     handleDateChange = (event) => {
         this.setState({ date: event.target.value });
@@ -49,7 +59,7 @@ class AddNewLog extends Component {
     }
       
     render() {
-        console.log(this.state.vehicle)
+
     return (
         <div className="box">
           <div id="blue" className="formTitle titleSmall">Add new route</div>
